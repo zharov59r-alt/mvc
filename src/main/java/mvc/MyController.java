@@ -100,6 +100,8 @@ public class MyController {
 
     }
 */
+
+    /*
     @RequestMapping("/showDetails")
     public String showEmployeeDetails(@Valid @ModelAttribute("employee") Employee employee,
                                       BindingResult bindingResult) {
@@ -110,5 +112,16 @@ public class MyController {
         return "show-emp-details-view";
 
     }
+
+    */
+
+    @GetMapping(path = "/showDetails", produces="application/json")
+    public Employee showEmployeeDetails(@Valid @ModelAttribute("employee") Employee employee,
+                                      BindingResult bindingResult) {
+
+        return employee;
+
+    }
+
 
 }

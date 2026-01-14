@@ -12,10 +12,10 @@ import java.util.Map;
 
 public class Employee {
 
-    @NotEmpty(message = "incorrect employee.name shouldn't be empty")
+ //   @NotEmpty(message = "incorrect employee.name shouldn't be empty")
  //   @Size(min = 5, max = 20, message = "incorrect employee.name length")
     private String name;
-    @NotEmpty(message = "incorrect employee.surname shouldn't be empty")
+ //   @NotEmpty(message = "incorrect employee.surname shouldn't be empty")
   //  @Size(min = 5, max = 20, message = "incorrect employee.surname length")
     private String surname;
  //   @Max(value = 1000, message = "incorrect employee.salary")
@@ -24,7 +24,7 @@ public class Employee {
     private String gender;
     private List<String> languages;
 
-    @CheckEmail(value = "gmail.com")
+  //  @CheckEmail(value = "gmail.com")
     private String email;
 
     public Employee() {
